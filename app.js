@@ -67,27 +67,25 @@
 
 
 
-        const ReactDOM={
-            render:function(reactElement,root){
-                root.innerHTML='';
-                const element = document.createElement(reactElement.type);
-                const {props} = reactElement;
-                for(const key in props){
-                    if(key==='children'){
-                        element.textContent = props[key];
-                    }
-                    else if(key==='style'){
-                        Object.assign(element.style,props.style);
-                    }
-                    else{
-                        element[key]=props[key];
-                    }
-                }
-                root.append(element);
-            }
-        }
-
-
+        // const ReactDOM={
+        //     render:function(reactElement,root){
+        //         root.innerHTML='';
+        //         const element = document.createElement(reactElement.type);
+        //         const {props} = reactElement;
+        //         for(const key in props){
+        //             if(key==='children'){
+        //                 element.textContent = props[key];
+        //             }
+        //             else if(key==='style'){
+        //                 Object.assign(element.style,props.style);
+        //             }
+        //             else{
+        //                 element[key]=props[key];
+        //             }
+        //         }
+        //         root.append(element);
+        //     }
+        // }
 
 
 
